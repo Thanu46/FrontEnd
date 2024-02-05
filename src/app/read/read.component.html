@@ -1,0 +1,33 @@
+<br><br>
+<h1 class="text-center">User Details</h1>
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>MObileNo</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Update</th>
+                <th>Delete</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of datas">
+                <td>{{data.firstname}}</td>
+                <td>{{data.lastname}}</td>
+                <td>{{data.mobileNo}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.message}}</td>
+                <td><button type="button"  class="btn btn-primary" routerLink="/update/{{data._id}}">Edit</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="deleteMessage(data._id)">Delete</button></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

@@ -1,0 +1,32 @@
+
+.container {
+    align-items: end;
+    background-color: beige;
+    color: rgb(47, 85, 72);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(48, 8, 224, 0.2); 
+  } 
+
+  
+form {
+    
+    font-size: 20px; 
+  }
+  
+ 
+  form label {
+    
+
+    font-size: 20px; 
+  }
+  
+  form input,
+  form select,
+  form textarea,
+  form button {
+    
+    font-size: 30px; 
+  }
